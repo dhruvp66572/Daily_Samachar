@@ -1,0 +1,92 @@
+/* Base styles */
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.navbar .form-control.search-input {
+  width: 158px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  color: #333;
+  padding-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.navbar .form-control.search-input:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.navbar .btn.search-button {
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.navbar .form-select.country-select {
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  color: #333;
+  padding-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.navbar .form-select.country-select:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar .form-control.search-input,
+  .navbar .btn.search-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar .btn.search-button {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar .form-select.country-select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.5rem;
+    margin-bottom: 0;
+
+  }
+
+  .navbar .form-control.search-input,
+  .navbar .btn.search-button,
+  .navbar .form-select.country-select {
+    width: 100%;  
+  }
+
+  .navbar .form-control.search-input {
+    font-size: 14px;
+    margin: 0.9rem 0;
+    width: 80%;
+  }
+
+  .navbar .btn.search-button { 
+    font-size: 14px;  
+    margin: 0.9rem 0;
+    width: 20%;
+  }
+
+  .navbar .form-select.country-select {
+    /* font-size: 14px;
+    margin: 0.9rem 0;
+    width: 100%; */
+    display: none;
+  }
+}
