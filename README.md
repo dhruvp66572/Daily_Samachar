@@ -1,6 +1,8 @@
-# Daily_Samachar
+# Daily Samachar
 
-![Daily_Samachar Screenshot](./DailySamachar.mp4)
+
+https://github.com/user-attachments/assets/29f10bfd-d872-4b71-b2b2-bd9312d3f941
+
 
 ## Overview
 
