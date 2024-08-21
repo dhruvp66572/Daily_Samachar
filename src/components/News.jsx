@@ -172,6 +172,7 @@ const News = (props) => {
     let parsedata = await data.json();
     props.setProgress(70);
 
+    console.log(parsedata);
     setArticle(parsedata.articles);
     setTotalResults(parsedata.totalResults);
     setLoading(false);
@@ -181,6 +182,8 @@ const News = (props) => {
   useEffect(() => {
     
     console.log(search);
+    console.log(totalResults)
+    console.log(article);
     document.title = `${captalizefirstLetter(props.category)} - Daily Samachar`;
     updateNews();
   }, [
